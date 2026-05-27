@@ -121,7 +121,7 @@ export default function Home() {
     <main className="min-h-[100dvh] overflow-x-hidden px-4 py-5 text-ink sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-7xl border-x border-line bg-paper/70">
         <header className="grid min-w-0 gap-6 border-b border-line px-4 py-6 md:grid-cols-[210px_1fr] md:px-6 lg:px-8">
-          <div className="w-full max-w-[220px] animate-quiet-rise overflow-hidden border border-line bg-white p-2 md:max-w-none">
+          <div className="profile-avatar relative w-full max-w-[220px] animate-quiet-rise overflow-hidden border border-line bg-white p-2 md:max-w-none">
             <Image
               alt="Marc Cedric Asas"
               className="aspect-square w-full object-cover"
@@ -130,6 +130,11 @@ export default function Home() {
               src={profile.avatarUrl}
               width={420}
             />
+            <span aria-hidden="true" className="shade-overlay">
+              <span className="shade-lens" />
+              <span className="shade-bridge" />
+              <span className="shade-lens" />
+            </span>
           </div>
 
           <div className="grid min-w-0 content-between gap-6">
