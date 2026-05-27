@@ -36,9 +36,6 @@ export function GalleryStrip() {
                 width={720}
               />
             </div>
-            <figcaption className="border-t border-line px-3 py-2 text-xs font-medium text-muted">
-              {item.title}
-            </figcaption>
           </figure>
         ))}
       </div>

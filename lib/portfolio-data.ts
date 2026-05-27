@@ -4,8 +4,7 @@ export const profile = {
   roles: ["Applied Physics", "Data Engineer", "AI"],
   affiliation: "University of the Philippines",
   email: "marcasas0521@gmail.com",
-  avatarUrl: "https://avatars.githubusercontent.com/u/116786374?v=4",
-  availability: "Data and AI systems, 2026",
+  avatarUrl: "/images/Profile.jpg",
   github: "https://github.com/marcxxz21"
 };
 
@@ -111,30 +110,18 @@ export const socials = [
     href: "https://linkedin.com/in/your-linkedin"
   },
   {
-    label: "Portfolio Source",
-    href: "https://github.com/marcxxz21/marc-cedric-asas-portfolio"
+    label: "Instagram",
+    href: "https://www.instagram.com/marc.xxz/"
   }
 ];
 
 export const gallery = [
   {
-    title: "Research day",
-    image: "https://picsum.photos/seed/marc-research-day/720/540"
+    title: "StockSage presentation",
+    image: "/images/gallery-1.png"
   },
   {
-    title: "Data community",
-    image: "https://picsum.photos/seed/marc-data-community/720/540"
-  },
-  {
-    title: "Project review",
-    image: "https://picsum.photos/seed/marc-project-review/720/540"
-  },
-  {
-    title: "Campus work",
-    image: "https://picsum.photos/seed/marc-campus-work/720/540"
-  },
-  {
-    title: "Conference",
-    image: "https://picsum.photos/seed/marc-conference/720/540"
+    title: "Mammography phantom research",
+    image: "/images/gallery-2.png"
   }
 ];

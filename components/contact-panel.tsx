@@ -43,7 +43,7 @@ export function ContactPanel() {
   if (!open) {
     return (
       <button
-        className="fixed bottom-5 right-5 inline-flex items-center gap-2 bg-ink px-4 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-accent active:-translate-y-px"
+        className="fixed bottom-5 right-5 inline-flex items-center gap-2 bg-[#181817] px-4 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-accent active:-translate-y-px"
         onClick={() => setOpen(true)}
         type="button"
       >
@@ -107,7 +107,7 @@ export function ContactPanel() {
 
         <div className="grid grid-cols-[1fr_auto] gap-2">
           <button
-            className="group inline-flex items-center justify-center gap-2 bg-ink px-3 py-2 text-sm font-semibold text-white transition hover:bg-accent active:-translate-y-px disabled:cursor-wait disabled:opacity-70"
+            className="group inline-flex items-center justify-center gap-2 bg-[#181817] px-3 py-2 text-sm font-semibold text-white transition hover:bg-accent active:-translate-y-px disabled:cursor-wait disabled:opacity-70"
             disabled={state === "loading"}
             type="submit"
           >

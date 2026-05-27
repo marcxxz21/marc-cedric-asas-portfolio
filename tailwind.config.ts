@@ -9,11 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        paper: "#f8f8f5",
-        ink: "#181817",
-        muted: "#6f6f68",
-        line: "#e4e2dc",
-        accent: "#2f6f5e"
+        paper: "var(--paper)",
+        ink: "var(--ink)",
+        muted: "var(--muted)",
+        line: "var(--line)",
+        accent: "var(--accent)"
       },
       fontFamily: {
         sans: ["Geist", "Satoshi", "Aptos", "ui-sans-serif", "system-ui", "sans-serif"],

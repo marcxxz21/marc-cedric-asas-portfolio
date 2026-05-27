@@ -4,15 +4,17 @@ import {
   EnvelopeSimple,
   GithubLogo,
   GraduationCap,
+  InstagramLogo,
   LinkSimple,
+  LinkedinLogo,
   MapPin,
   SealCheck,
-  Sparkle,
-  Trophy
+  Sparkle
 } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import { ContactPanel } from "@/components/contact-panel";
 import { GalleryStrip } from "@/components/gallery-strip";
+import { ThemeToggle } from "@/components/theme-toggle";
 import {
   about,
   experience,
@@ -26,12 +28,21 @@ import {
 function SectionTitle({
   eyebrow,
   title,
-  action
+  action,
+  actionHref
 }: {
   eyebrow?: string;
   title: string;
   action?: string;
+  actionHref?: string;
 }) {
+  const actionContent = action ? (
+    <>
+      {action}
+      <ArrowUpRight size={15} />
+    </>
+  ) : null;
+
   return (
     <div className="mb-5 flex items-end justify-between gap-4">
       <div>
@@ -40,11 +51,17 @@ function SectionTitle({
         ) : null}
         <h2 className="text-2xl font-semibold tracking-tight text-ink md:text-3xl">{title}</h2>
       </div>
-      {action ? (
-        <span className="hidden items-center gap-2 text-sm text-muted md:inline-flex">
-          {action}
-          <ArrowUpRight size={15} />
-        </span>
+      {action && actionHref ? (
+        <a
+          className="hidden items-center gap-2 text-sm text-muted transition hover:text-accent md:inline-flex"
+          href={actionHref}
+          rel="noreferrer"
+          target="_blank"
+        >
+          {actionContent}
+        </a>
+      ) : action ? (
+        <span className="hidden items-center gap-2 text-sm text-muted md:inline-flex">{actionContent}</span>
       ) : null}
     </div>
   );
@@ -83,6 +100,22 @@ function Tag({ children }: { children: React.ReactNode }) {
   );
 }
 
+function SocialIcon({ label }: { label: string }) {
+  if (label === "GitHub") {
+    return <GithubLogo size={16} />;
+  }
+
+  if (label === "LinkedIn") {
+    return <LinkedinLogo size={16} />;
+  }
+
+  if (label === "Instagram") {
+    return <InstagramLogo size={16} />;
+  }
+
+  return <ArrowUpRight size={15} />;
+}
+
 export default function Home() {
   return (
     <main className="min-h-[100dvh] overflow-x-hidden px-4 py-5 text-ink sm:px-6 lg:px-8">
@@ -91,7 +124,7 @@ export default function Home() {
           <div className="w-full max-w-[220px] animate-quiet-rise overflow-hidden border border-line bg-white p-2 md:max-w-none">
             <Image
               alt="Marc Cedric Asas"
-              className="aspect-square w-full object-cover grayscale transition duration-500 hover:grayscale-0"
+              className="aspect-square w-full object-cover"
               height={420}
               priority
               src={profile.avatarUrl}
@@ -121,12 +154,8 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="animate-quiet-rise self-start border border-line bg-white px-4 py-3 [animation-delay:160ms]">
-                <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-muted">Current focus</p>
-                <p className="mt-2 flex items-center gap-2 text-sm font-semibold">
-                  <span className="size-2 animate-breathe rounded-full bg-accent" />
-                  {profile.availability}
-                </p>
+              <div className="animate-quiet-rise self-start justify-self-start [animation-delay:160ms] lg:justify-self-end">
+                <ThemeToggle />
               </div>
             </div>
 
@@ -155,28 +184,15 @@ export default function Home() {
           </section>
 
           <aside className="min-w-0 border-b border-line px-4 py-8 md:px-6 lg:px-8">
-            <div className="relative overflow-hidden border border-ink bg-ink p-6 text-white shadow-soft">
-              <div className="absolute inset-x-0 top-0 h-px bg-white/30" />
-              <div className="mb-16 flex items-center justify-between">
-                <Trophy size={24} />
-                <span className="font-mono text-[10px] uppercase tracking-[0.22em] text-white/50">
-                  Access card
-                </span>
-              </div>
-              <p className="font-mono text-xs uppercase tracking-[0.26em] text-white/45">Data systems</p>
-              <p className="mt-2 text-2xl font-semibold tracking-tight">Applied Physics to AI</p>
-              <div className="mt-14 grid grid-cols-[1fr_auto] items-end gap-4">
-                <div>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-white/45">Portfolio</p>
-                  <p className="mt-2 text-sm font-semibold">{profile.name}</p>
-                </div>
-                <div className="grid size-12 grid-cols-4 gap-0.5 opacity-70">
-                  {Array.from({ length: 16 }).map((_, index) => (
-                    <span className={index % 3 === 0 ? "bg-white" : "bg-white/25"} key={index} />
-                  ))}
-                </div>
-              </div>
-            </div>
+            <figure className="mx-auto w-full max-w-[260px] animate-quiet-rise">
+              <Image
+                alt="Certified Data Engineer Associate badge"
+                className="h-auto w-full shadow-soft"
+                height={240}
+                src="/images/data-engineer-associate-badge.png"
+                width={196}
+              />
+            </figure>
           </aside>
 
           <section className="min-w-0 border-b border-line px-4 py-8 md:px-6 lg:border-r lg:px-8">
@@ -223,7 +239,12 @@ export default function Home() {
           </aside>
 
           <section id="projects" className="min-w-0 border-b border-line px-4 py-8 md:px-6 lg:border-r lg:px-8">
-            <SectionTitle eyebrow="Selected work" title="Recent Projects" action="View all" />
+            <SectionTitle
+              action="View all"
+              actionHref="https://github.com/marcxxz21?tab=repositories"
+              eyebrow="Selected work"
+              title="Recent Projects"
+            />
             <div className="grid gap-px overflow-hidden border border-line bg-line md:grid-cols-2">
               {projects.map((project, index) => (
                 <article
@@ -284,7 +305,10 @@ export default function Home() {
                     rel="noreferrer"
                     target="_blank"
                   >
-                    {social.label}
+                    <span className="inline-flex items-center gap-2">
+                      <SocialIcon label={social.label} />
+                      {social.label}
+                    </span>
                     <ArrowUpRight size={15} />
                   </a>
                 ))}
