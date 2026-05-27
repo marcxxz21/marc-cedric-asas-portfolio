@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --paper: #f8f8f5;
+  --ink: #181817;
+  --muted: #6f6f68;
+  --line: #e4e2dc;
+  --accent: #2f6f5e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(90deg, rgba(24, 24, 23, 0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(24, 24, 23, 0.03) 1px, transparent 1px),
+    var(--paper);
+  background-size: 64px 64px;
+  color: var(--ink);
+  font-family: "Geist", "Satoshi", "Aptos", ui-sans-serif, system-ui, sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(24, 24, 23, 0.08) 0.5px, transparent 0.5px);
+  background-size: 5px 5px;
+  opacity: 0.22;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(47, 111, 94, 0.2);
+}
+
+.copy-width {
+  width: 100%;
+  max-width: min(72ch, calc(100vw - 4rem));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
