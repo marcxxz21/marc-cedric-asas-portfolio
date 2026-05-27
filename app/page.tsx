@@ -248,7 +248,7 @@ export default function Home() {
             <div className="grid gap-px overflow-hidden border border-line bg-line md:grid-cols-2">
               {projects.map((project, index) => (
                 <article
-                  className="group animate-quiet-rise bg-paper p-5 transition hover:bg-white"
+                  className="group animate-quiet-rise bg-paper p-5 transition hover:bg-white hover:text-[#181817]"
                   key={project.title}
                   style={{ animationDelay: `${index * 90}ms` }}
                 >
@@ -264,10 +264,15 @@ export default function Home() {
                       <ArrowUpRight size={16} />
                     </a>
                   </div>
-                  <p className="mt-3 min-h-16 text-sm leading-6 text-muted">{project.description}</p>
+                  <p className="mt-3 min-h-16 text-sm leading-6 text-muted transition group-hover:text-[#5f5b53]">{project.description}</p>
                   <div className="mt-5 flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
-                      <Tag key={tag}>{tag}</Tag>
+                      <span
+                        className="border border-line bg-white px-2.5 py-1 font-mono text-[11px] text-ink/78 transition group-hover:border-[#181817] group-hover:bg-[#181817] group-hover:text-white"
+                        key={tag}
+                      >
+                        {tag}
+                      </span>
                     ))}
                   </div>
                 </article>

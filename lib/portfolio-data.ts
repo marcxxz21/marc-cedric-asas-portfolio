@@ -107,7 +107,7 @@ export const socials = [
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/your-linkedin"
+    href: "https://www.linkedin.com/in/marc-cedric-asas-3a2a1036a/"
   },
   {
     label: "Instagram",
