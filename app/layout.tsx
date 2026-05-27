@@ -6,6 +6,20 @@ export const metadata: Metadata = {
   description:
     "Portfolio template for Marc Cedric Asas, an applied physics student and aspiring data engineer focused on practical software, data pipelines, and intelligent systems.",
   metadataBase: new URL("https://marc-cedric-asas.vercel.app"),
+  icons: {
+    icon: [
+      {
+        url: "/favicon.jpg",
+        type: "image/jpeg"
+      }
+    ],
+    apple: [
+      {
+        url: "/favicon.jpg",
+        type: "image/jpeg"
+      }
+    ]
+  },
   openGraph: {
     title: "Marc Cedric Asas | Data Engineer and AI Portfolio",
     description:

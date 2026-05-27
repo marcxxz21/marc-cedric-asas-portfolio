@@ -124,17 +124,12 @@ export default function Home() {
           <div className="profile-avatar relative w-full max-w-[220px] animate-quiet-rise overflow-hidden border border-line bg-white p-2 md:max-w-none">
             <Image
               alt="Marc Cedric Asas"
-              className="aspect-square w-full object-cover"
+              className="aspect-square w-full object-cover object-center"
               height={420}
               priority
               src={profile.avatarUrl}
               width={420}
             />
-            <span aria-hidden="true" className="shade-overlay">
-              <span className="shade-lens" />
-              <span className="shade-bridge" />
-              <span className="shade-lens" />
-            </span>
           </div>
 
           <div className="grid min-w-0 content-between gap-6">
