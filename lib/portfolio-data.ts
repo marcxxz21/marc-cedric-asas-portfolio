@@ -40,10 +40,10 @@ export const techStack = [
 export const projects = [
   {
     title: "StockSage",
-    description: "Stock intelligence dashboard for market research, portfolio signals, and data-backed investment views.",
+    description: "Stock analysis and forecasting dashboard built with Next.js, FastAPI, yfinance, PyTorch, and RidgeCV for market research, prediction signals, and trade planning.",
     href: "https://stocksage-dashboard-one.vercel.app",
     source: "https://github.com/marcxxz21/stocksage-dashboard",
-    tags: ["TypeScript", "Dashboard", "Finance"]
+    tags: ["Next.js", "FastAPI", "PyTorch", "Finance", "Vercel"]
   },
   {
     title: "Alon",
@@ -54,10 +54,10 @@ export const projects = [
   },
   {
     title: "Diabetic Retinopathy Classification",
-    description: "Deep learning research using custom CNNs and ResNet-50 transfer learning for medical image classification.",
+    description: "Deep learning medical imaging project using custom CNNs and fine-tuned ResNet-50 in PyTorch to classify diabetic retinopathy stages from retinal fundus images, achieving 82.40% accuracy and 0.9384 ROC-AUC.",
     href: "https://github.com/marcxxz21/Diabetic-Retinopathy-Classification-Using-CNNs-and-ResNet-50-PyTorch-",
     source: "https://github.com/marcxxz21/Diabetic-Retinopathy-Classification-Using-CNNs-and-ResNet-50-PyTorch-",
-    tags: ["PyTorch", "CNN", "Research"]
+    tags: ["PyTorch", "CNN", "ResNet-50", "Medical Imaging"]
   },
   {
     title: "Brewline Sales Analytics",
