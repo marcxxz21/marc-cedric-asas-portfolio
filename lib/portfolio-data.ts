@@ -47,10 +47,10 @@ export const projects = [
   },
   {
     title: "Alon",
-    description: "A modern web project built with a compact TypeScript stack and deployed on Vercel.",
+    description: "Philippine stock analytics platform built with Next.js, Supabase, Airflow, dbt, and Python ETL/ML pipelines for watchlists, portfolios, market insights, and explainable prediction signals.",
     href: "https://alon-web.vercel.app",
     source: "https://github.com/marcxxz21/alon",
-    tags: ["TypeScript", "Next.js", "Vercel"]
+    tags: ["TypeScript", "Next.js", "Vercel", "Supabase", "Airflow", "dbt", "Python"]
   },
   {
     title: "Diabetic Retinopathy Classification",
@@ -60,11 +60,11 @@ export const projects = [
     tags: ["PyTorch", "CNN", "Research"]
   },
   {
-    title: "Glioma Genomic Classification",
-    description: "Regularized logistic regression on TCGA genomic data with feature selection for interpretable subtype modeling.",
-    href: "https://github.com/marcxxz21/Glioma-Classification-Using-Regularized-Logistic-Regression-on-TCGA-Genomic-Data",
-    source: "https://github.com/marcxxz21/Glioma-Classification-Using-Regularized-Logistic-Regression-on-TCGA-Genomic-Data",
-    tags: ["Jupyter", "Genomics", "ML"]
+    title: "Brewline Sales Analytics",
+    description: "End-to-end retail sales analytics pipeline using Airflow, Python, PostgreSQL, Docker, and Vercel to clean transaction data, generate reports, and publish an online dashboard.",
+    href: "https://coffeeshopetl.vercel.app/",
+    source: "https://github.com/marcxxz21/brewline-sales-analytics",
+    tags: ["Apache Airflow", "PostgreSQL", "Docker", "Python", "SQL", "Vercel"]
   }
 ];
 
