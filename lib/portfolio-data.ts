@@ -55,8 +55,8 @@ export const projects = [
   {
     title: "Kalakbay", 
     description: "Daily commute intelligence platform built with Next.js, Supabase, PostgreSQL, public mobility APIs, and route tracking features for saved routes, ride logs, commute insights, weather context, and live trip monitoring.",
-    href: "https://github.com/marcxxz21/Diabetic-Retinopathy-Classification-Using-CNNs-and-ResNet-50-PyTorch-",
-    source: "https://lakbayloop.vercel.app/",
+    href: "https://lakbayloop.vercel.app/",
+    source: "https://github.com/marcxxz21/kalakbay",
     tags: ["TypeScript", "Next.js", "Vercel", "Supabase", "PostgreSQL", "APIs", "Recharts"]
   },
   {
