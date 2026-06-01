@@ -53,11 +53,11 @@ export const projects = [
     tags: ["TypeScript", "Next.js", "Vercel", "Supabase", "Airflow", "dbt", "Python"]
   },
   {
-    title: "Diabetic Retinopathy Classification",
-    description: "Deep learning medical imaging project using custom CNNs and fine-tuned ResNet-50 in PyTorch to classify diabetic retinopathy stages from retinal fundus images, achieving 82.40% accuracy and 0.9384 ROC-AUC.",
+    title: "Kalakbay", 
+    description: "Daily commute intelligence platform built with Next.js, Supabase, PostgreSQL, public mobility APIs, and route tracking features for saved routes, ride logs, commute insights, weather context, and live trip monitoring.",
     href: "https://github.com/marcxxz21/Diabetic-Retinopathy-Classification-Using-CNNs-and-ResNet-50-PyTorch-",
-    source: "https://github.com/marcxxz21/Diabetic-Retinopathy-Classification-Using-CNNs-and-ResNet-50-PyTorch-",
-    tags: ["PyTorch", "CNN", "ResNet-50", "Medical Imaging"]
+    source: "https://lakbayloop.vercel.app/",
+    tags: ["TypeScript", "Next.js", "Vercel", "Supabase", "PostgreSQL", "APIs", "Recharts"]
   },
   {
     title: "Brewline Sales Analytics",
