@@ -14,13 +14,13 @@ import {
 import Image from "next/image";
 import { ContactPanel } from "@/components/contact-panel";
 import { GalleryStrip } from "@/components/gallery-strip";
+import { ProjectsSection } from "@/components/projects-section";
 import { ThemeToggle } from "@/components/theme-toggle";
 import {
   about,
   experience,
   memberships,
   profile,
-  projects,
   socials,
   techStack
 } from "@/lib/portfolio-data";
@@ -238,47 +238,7 @@ export default function Home() {
             </div>
           </aside>
 
-          <section id="projects" className="min-w-0 border-b border-line px-4 py-8 md:px-6 lg:border-r lg:px-8">
-            <SectionTitle
-              action="View all"
-              actionHref="https://github.com/marcxxz21?tab=repositories"
-              eyebrow="Selected work"
-              title="Recent Projects"
-            />
-            <div className="grid gap-px overflow-hidden border border-line bg-line md:grid-cols-2">
-              {projects.map((project, index) => (
-                <article
-                  className="group animate-quiet-rise bg-paper p-5 transition hover:bg-white hover:text-[#181817]"
-                  key={project.title}
-                  style={{ animationDelay: `${index * 90}ms` }}
-                >
-                  <div className="flex items-start justify-between gap-4">
-                    <h3 className="text-lg font-semibold tracking-tight">{project.title}</h3>
-                    <a
-                      aria-label={`Open ${project.title}`}
-                      className="inline-flex size-8 shrink-0 items-center justify-center border border-line bg-white transition group-hover:border-accent group-hover:text-accent active:-translate-y-px"
-                      href={project.href}
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      <ArrowUpRight size={16} />
-                    </a>
-                  </div>
-                  <p className="mt-3 min-h-16 text-sm leading-6 text-muted transition group-hover:text-[#5f5b53]">{project.description}</p>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <span
-                        className="border border-line bg-white px-2.5 py-1 font-mono text-[11px] text-ink/78 transition group-hover:border-[#181817] group-hover:bg-[#181817] group-hover:text-white"
-                        key={tag}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
+          <ProjectsSection />
 
           <section className="col-span-full grid min-w-0 gap-0 border-b border-line lg:grid-cols-[1fr_1fr_1fr_1fr]">
             <div className="border-b border-line px-4 py-6 md:px-6 lg:border-b-0 lg:border-r lg:px-8">

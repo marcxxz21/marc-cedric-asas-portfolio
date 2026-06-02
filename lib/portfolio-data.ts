@@ -68,6 +68,42 @@ export const projects = [
   }
 ];
 
+export const allProjects = [
+  ...projects,
+  {
+    title: "Glioma Classification using Regularized Logistic Regression (TCGA Data)",
+    description:
+      "This project applies regularized logistic regression to classify glioma subtypes using high-dimensional genomic data from The Cancer Genome Atlas (TCGA). It focuses on improving model performance and interpretability through feature selection and regularization techniques.",
+    href: "https://github.com/marcxxz21/Glioma-Classification-Using-Regularized-Logistic-Regression-on-TCGA-Genomic-Data",
+    source: "https://github.com/marcxxz21/Glioma-Classification-Using-Regularized-Logistic-Regression-on-TCGA-Genomic-Data",
+    tags: ["Python", "NumPy", "Pandas", "Scikit-learn", "Matplotlib", "Seaborn"]
+  },
+  {
+    title: "MATLAB-Based 3D Mammography Phantom with MGD Calculation",
+    description:
+      "This project presents a MATLAB-based three-dimensional mammography phantom designed using voxel-based modeling to simulate realistic breast anatomy and imaging conditions. The system integrates physics-based Mean Glandular Dose (MGD) calculations using the Dance model and is validated against Philippine Diagnostic Reference Levels (DRLs).",
+    href: "https://github.com/marcxxz21/MATLAB-Based-Three-Dimensional-Mammography-Phantom-Model",
+    source: "https://github.com/marcxxz21/MATLAB-Based-Three-Dimensional-Mammography-Phantom-Model",
+    tags: ["MATLAB"]
+  },
+  {
+    title: "Diabetic Retinopathy Classification using CNNs and ResNet-50 (PyTorch)",
+    description:
+      "This project focuses on automated detection and classification of diabetic retinopathy from retinal fundus images using deep learning. It compares a custom Convolutional Neural Network (CNN) with a fine-tuned ResNet-50 model leveraging transfer learning.",
+    href: "https://github.com/marcxxz21/Diabetic-Retinopathy-Classification-Using-CNNs-and-ResNet-50-PyTorch-",
+    source: "https://github.com/marcxxz21/Diabetic-Retinopathy-Classification-Using-CNNs-and-ResNet-50-PyTorch-",
+    tags: ["Python", "PyTorch", "Torchvision", "NumPy", "Matplotlib", "PIL"]
+  },
+  {
+    title: "Blackjack Hi-Lo Enhancement with Bayesian Inference",
+    description:
+      "This project implements a Python-based simulation that enhances the traditional Hi-Lo card counting system in blackjack using Bayesian inference. By integrating probabilistic reasoning with classic counting methods, it improves betting strategies and decision-making over long simulations.",
+    href: "https://github.com/marcxxz21/Hi-Lo-Card-Counting-Model",
+    source: "https://github.com/marcxxz21/Hi-Lo-Card-Counting-Model",
+    tags: ["Python", "NumPy", "Pandas"]
+  }
+];
+
 export const experience = [
   {
     role: "Data and Analytics Engineer",
