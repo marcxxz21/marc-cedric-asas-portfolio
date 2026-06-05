@@ -46,13 +46,6 @@ export const projects = [
     tags: ["Next.js", "FastAPI", "PyTorch", "Finance", "Vercel"]
   },
   {
-    title: "Alon",
-    description: "Philippine stock analytics platform built with Next.js, Supabase, Airflow, dbt, and Python ETL/ML pipelines for watchlists, portfolios, market insights, and explainable prediction signals.",
-    href: "https://alon-web.vercel.app",
-    source: "https://github.com/marcxxz21/alon",
-    tags: ["TypeScript", "Next.js", "Vercel", "Supabase", "Airflow", "dbt", "Python"]
-  },
-  {
     title: "Kalakbay", 
     description: "Daily commute intelligence platform built with Next.js, Supabase, PostgreSQL, public mobility APIs, and route tracking features for saved routes, ride logs, commute insights, weather context, and live trip monitoring.",
     href: "https://lakbayloop.vercel.app/",
@@ -78,6 +71,13 @@ export const projects = [
 
 export const allProjects = [
   ...projects,
+  {
+    title: "Alon",
+    description: "Philippine stock analytics platform built with Next.js, Supabase, Airflow, dbt, and Python ETL/ML pipelines for watchlists, portfolios, market insights, and explainable prediction signals.",
+    href: "https://alon-web.vercel.app",
+    source: "https://github.com/marcxxz21/alon",
+    tags: ["TypeScript", "Next.js", "Vercel", "Supabase", "Airflow", "dbt", "Python"]
+  },
   {
     title: "Glioma Classification using Regularized Logistic Regression (TCGA Data)",
     description:
