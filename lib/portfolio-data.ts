@@ -65,6 +65,14 @@ export const projects = [
     href: "https://coffeeshopetl.vercel.app/",
     source: "https://github.com/marcxxz21/brewline-sales-analytics",
     tags: ["Apache Airflow", "PostgreSQL", "Docker", "Python", "SQL", "Vercel"]
+  },
+  {
+    title: "Philippine Earthquake Monitoring Pipeline",
+    description:
+      "Daily refreshed earthquake analytics pipeline built with Databricks, PySpark, Delta Lake, Kaggle API, and Spark SQL for Bronze-Silver-Gold data processing, seismic trend monitoring, and dashboard-ready insights.",
+    href: "https://github.com/marcxxz21/ph_earthquake_pipeline",
+    source: "https://github.com/marcxxz21/ph_earthquake_pipeline",
+    tags: ["Databricks", "PySpark", "Delta Lake", "Spark SQL", "Databricks Jobs", "Dashboards"]
   }
 ];
 
